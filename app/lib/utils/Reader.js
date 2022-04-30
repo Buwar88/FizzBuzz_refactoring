@@ -8,6 +8,6 @@ class Reader{
 
 }
 
-module.exports = Reader
+module.exports = Reader;
 
 //console.log(Reader.readJsonFile("./explorers.json"))
