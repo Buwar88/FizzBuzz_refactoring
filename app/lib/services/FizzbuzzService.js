@@ -1,5 +1,3 @@
-
-
 const Reader = require("./../../../app/lib/utils/Reader");
 const explorers = Reader.readJsonFile("./explorers.json");
 const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
