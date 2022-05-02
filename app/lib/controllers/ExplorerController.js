@@ -16,6 +16,10 @@ class ExplorerController {
         const sumaExplorersByMission = ExplorerService.getAmountOfExplorersByMission(explorers, mission);    
         return sumaExplorersByMission;
     }
+    static GetExplorersByStack(stack){
+        const listExplorersByStack = ExplorerService.getExplorersByStack(explorers, stack);
+        return listExplorersByStack;
+    }
 
 }
 

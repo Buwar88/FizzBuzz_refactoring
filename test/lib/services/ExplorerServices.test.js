@@ -21,3 +21,9 @@ describe("Test de ExplorerService", () => {
         expect(nameExplorersByMission).toContain("ajolonauta1");
     }); 
 });
+describe("Test de ExplorerService", () => {
+    test("Nombre de explorers por Stack", () =>{
+        const nameExplorersByStack = ExplorerService.getExplorersByStack(explorers, "elm");
+        expect(nameExplorersByStack).toContain("ajolonauta6");
+    }); 
+});

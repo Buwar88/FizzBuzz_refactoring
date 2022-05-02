@@ -1,6 +1,8 @@
+
 const Reader = require("./../fizzbuzz/app/lib/utils/Reader");
 const explorers = Reader.readJsonFile("./explorers.json");
-const ExplorerController = require("./../fizzbuzz/app/lib/controllers/ExplorerController.js");
+const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
+const explorer = "Woopa15"
+const explorersInNodeAndFizz= explorersInNode.map((explorer) => prueba1);
 
-const explorersInNode = ExplorerController.getExplorersByMission("java");
-console.log(explorersInNode);
+console.log(prueba1);
