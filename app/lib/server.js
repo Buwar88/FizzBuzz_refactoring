@@ -38,4 +38,4 @@ app.get("/v1/explorers/stack/:stack", (request, response) => {
     const stack = request.params.stack;
     const explorerStack = ExplorerController.GetExplorersByStack(stack);
     response.json({explorers: explorerStack});
-})
+});

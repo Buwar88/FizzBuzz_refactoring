@@ -1,7 +1,7 @@
 const Reader = require("./../../../app/lib/utils/Reader");
-//const FizzbuzzService = require("./../../../app/lib/services/FizzbuzzService");
 const explorers = Reader.readJsonFile("./explorers.json");
 const ExplorerService = require("./../../../app/lib/services/ExplorerService");
+const FizzbuzzService = require("./../../../app/lib/services/FizzbuzzService");
 
 class ExplorerController {
     static getExplorersByMission(mission){
@@ -20,7 +20,18 @@ class ExplorerController {
         const listExplorersByStack = ExplorerService.getExplorersByStack(explorers, stack);
         return listExplorersByStack;
     }
+    static applyFizzbuzz(number){
+        const numberFizzbuzz = FizzbuzzService.applyValidationInNumber(number);
+        return numberFizzbuzz;
+    }
+    static explorersArrayToString(mission){
+        const explorersArray = ExplorerService.getExplorersUsernamesByMission(explorers, mission);
+        const arrayToString = explorersArray.toString();
+        return arrayToString;
+    }
 
 }
 
 module.exports = ExplorerController;
+
+

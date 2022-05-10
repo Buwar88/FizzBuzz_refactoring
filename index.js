@@ -1,8 +1,14 @@
+const number = parseInt(2)
 
-const Reader = require("./../fizzbuzz/app/lib/utils/Reader");
-const explorers = Reader.readJsonFile("./explorers.json");
-const explorersInNode = explorers.filter((explorer) => explorer.mission == "node");
-const explorer = "Woopa15"
-const explorersInNodeAndFizz= explorersInNode.map((explorer) => prueba1);
-
-console.log(prueba1);
+function typeOfNaN(number) {
+    if (Number.isNaN(number)) {
+      return 'Number NaN';
+    }
+    if (isNaN(number)) {
+      return 'NaN';
+    }
+    if (!isNaN(number)){
+        return "es un numero"
+    }
+  }
+  console.log(typeOfNaN(10))

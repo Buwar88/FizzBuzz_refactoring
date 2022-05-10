@@ -1,6 +1,5 @@
-const Reader = require("./../../../app/lib/utils/Reader");
+
 const FizzbuzzService = require("./../../../app/lib/services/FizzbuzzService");
-const explorers = Reader.readJsonFile("./explorers.json");
 
 describe("Test de FizzbuzzService 1", () => {
     test("Explorer1", () =>{

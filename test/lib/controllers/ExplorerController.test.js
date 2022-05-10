@@ -1,5 +1,4 @@
-const Reader = require("./../../../app/lib/utils/Reader");
-const explorers = Reader.readJsonFile("./explorers.json");
+
 const ExplorerController = require("../../../../fizzbuzz/app/lib/controllers/ExplorerController");
 
 describe("Test de ExplorerService", () => {
@@ -19,5 +18,11 @@ describe("Test de ExplorerService", () => {
     test("Nombre de explorers por misión", () =>{
         const nameExplorersByMission = ExplorerController.GetExplorersUsernamesByMission("node");
         expect(nameExplorersByMission).toContain("ajolonauta2");
+    }); 
+});
+describe("Test de ExplorerService", () => {
+    test("Array de explorers por misión a cadena", () =>{
+        const explorersNode = ExplorerController.explorersArrayToString("java");     
+        expect(explorersNode).toContain("ajolonauta8");
     }); 
 });
